@@ -1,479 +1,181 @@
-<!DOCTYPE html>
-
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <link href="ay.jpg" rel="icon">
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/bootstrap-icons.css" />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/glightbox.min.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Merna Ayman — Computer Science graduate from Helwan University. Resume, technical skills, projects, education, and training.">
+  <title>Merna Ayman | Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+    :root{--bg:#0b1020;--panel:#111a2e;--panel2:#151f35;--text:#edf2ff;--muted:#a6b1c7;--accent:#8b9cff;--accent2:#64e3cb;--line:rgba(174,190,225,.14);--max:1120px}
+    *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:86px}body{font-family:"DM Sans",sans-serif;background:var(--bg);color:var(--text);line-height:1.7}a{color:inherit;text-decoration:none}.container{width:min(var(--max),calc(100% - 48px));margin:auto}.section{padding:88px 0}.muted-section{background:#0e1628}.site-header{position:sticky;top:0;z-index:20;background:rgba(11,16,32,.9);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:74px;display:flex;align-items:center;justify-content:space-between}.brand{font:700 1.7rem "Space Grotesk",sans-serif;letter-spacing:-2px}.brand span{color:var(--accent2)}.nav-links{display:flex;align-items:center;gap:27px;color:var(--muted);font-size:.9rem}.nav-links a:hover{color:var(--accent2)}.menu-toggle{display:none;background:none;border:0;color:var(--text);font-size:1.35rem}.hero{padding:88px 0 78px;background:radial-gradient(ellipse at 80% 30%,rgba(93,111,220,.15),transparent 42%)}.hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:50px;align-items:center}.eyebrow{font-size:.75rem;font-weight:700;letter-spacing:2px;color:var(--accent2);margin-bottom:18px}.hero h1,h2,h3{font-family:"Space Grotesk",sans-serif}.hero h1{font-size:clamp(2.8rem,5vw,4.5rem);line-height:1.1;letter-spacing:-2.5px;margin-bottom:20px}.hero h1 span,.section-title span{color:var(--accent)}.hero-copy>p:not(.eyebrow){color:var(--muted);font-size:1.04rem;max-width:680px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:27px 0 23px}.button{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:8px;font-weight:700;font-size:.9rem;transition:.2s}.button:hover{transform:translateY(-3px)}.primary{background:var(--accent);color:#0b1020}.outline{border:1px solid var(--line)}.outline:hover{border-color:var(--accent)}.socials{display:flex;gap:18px;color:var(--muted);font-size:1.2rem}.socials a:hover{color:var(--accent2)}.portrait-wrap{justify-self:center;position:relative;width:min(280px,100%);aspect-ratio:1;border-radius:24px;padding:10px;background:linear-gradient(140deg,var(--accent),var(--accent2));box-shadow:0 25px 70px #0006}.portrait-wrap img{width:100%;height:100%;object-fit:cover;border-radius:17px;display:block}.portrait-note{position:absolute;bottom:-18px;right:-24px;background:var(--panel2);border:1px solid var(--line);padding:10px 15px;border-radius:9px;font-size:.82rem;box-shadow:0 12px 30px #0005}.portrait-note i{color:var(--accent2);margin-right:7px}.section-title{font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.2;letter-spacing:-1.2px;margin-bottom:13px}.section-lead{color:var(--muted);max-width:760px;margin-bottom:32px}.resume-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:26px}.card h3{font-size:1.12rem;margin-bottom:14px}.card h3 i{color:var(--accent2);margin-right:9px}.summary{color:var(--muted)}.facts{display:flex;gap:30px;flex-wrap:wrap;margin-top:25px;padding-top:20px;border-top:1px solid var(--line)}.facts div{display:flex;flex-direction:column}.facts strong{font:600 1.12rem "Space Grotesk",sans-serif}.facts span{font-size:.78rem;color:var(--muted)}.entry{padding:0 0 20px;margin-bottom:19px;border-bottom:1px solid var(--line)}.entry:last-child{padding:0;margin:0;border:0}.entry-head{display:flex;justify-content:space-between;gap:15px;align-items:flex-start}.entry h4{font:600 1rem "Space Grotesk",sans-serif}.date{font-size:.77rem;color:var(--accent2);white-space:nowrap;font-weight:700}.entry p,.entry li{font-size:.88rem;color:var(--muted)}.entry ul{padding-left:18px;margin-top:7px}.skills{display:flex;flex-wrap:wrap;gap:9px}.skills span,.tag{font-size:.8rem;padding:7px 11px;background:#202c46;color:#d4dcff;border:1px solid rgba(139,156,255,.1);border-radius:6px}.project{padding:18px 0;border-bottom:1px solid var(--line)}.project:last-child{border:0;padding-bottom:0}.project h4{font:600 1rem "Space Grotesk",sans-serif;margin-bottom:5px}.project p{font-size:.88rem;color:var(--muted)}.project a{display:inline-block;margin-top:8px;font-size:.83rem;font-weight:700;color:var(--accent2)}.project a i{margin-left:5px}.cert-list{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}.cert{display:flex;gap:12px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px}.cert i{color:var(--accent2);margin-top:4px}.cert strong{display:block;font-size:.9rem}.cert small{color:var(--muted);font-size:.78rem}.contact-box{text-align:center;max-width:760px;margin:auto}.contact-box p{color:var(--muted);margin:12px 0 24px}.contact-links{display:flex;justify-content:center;gap:17px;flex-wrap:wrap;color:var(--muted);font-size:.88rem}.contact-links a:hover{color:var(--accent2)}footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:.8rem}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:15px}
+    @media(max-width:800px){.hero-grid{grid-template-columns:1fr;gap:48px}.portrait-wrap{grid-row:1;width:210px}.resume-grid{grid-template-columns:1fr}.nav-links{gap:15px}}
+    @media(max-width:600px){.container{width:calc(100% - 34px)}.section{padding:65px 0}.nav{height:66px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:66px;left:0;right:0;background:#111a2e;padding:20px 24px;flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line)}.nav-links.open{display:flex}.hero{padding:65px 0}.hero h1{font-size:2.7rem;letter-spacing:-1.7px}.portrait-wrap{width:185px}.portrait-note{right:-12px}.card{padding:21px}.cert-list{grid-template-columns:1fr}.entry-head{display:block}.date{display:block;margin-top:3px}.footer-inner{flex-direction:column;text-align:center}}
+    @media print{ :root{--bg:#fff;--panel:#fff;--panel2:#f4f6fb;--text:#172033;--muted:#4d5870;--accent:#4055a8;--accent2:#087f70;--line:#dce1eb}body{background:#fff;color:#172033}.site-header,.hero-actions,.socials,.portrait-wrap,.contact-box,.footer{display:none!important}.hero{padding:25px 0;background:#fff}.section{padding:22px 0}.card,.cert{break-inside:avoid;box-shadow:none}.muted-section{background:#fff}.container{width:100%}.resume-grid{gap:10px}.card{padding:16px}}
+  </style>
 </head>
-
 <body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top">MA<span>.</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      <div class="nav-links">
+        <a href="#about">Profile</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-    <!-- ======= cV Section ======= -->
-    <section class="about-mf sect-pt4 route">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="box-shadow-full">
-                        <div class="row">
-                            <div class="col-md-4">
-                                    <div class="col-sm-6 ">
-                                        <div >
-                                            <p style="font-family: serif; font-size:xx-large;">Merna Ayman</p>
-                                            <!-- <ul>
-                                                <li style="list-style-type: none;">
-                                                    <span >Software Enginer</span>
-                                                </li>
-                                            </ul> -->
-                                        </div>
-                                    </div>
-
-                                
-                                <div class="row">
-                                    <div class="col-sm-6 ">
-                                        <div class="about-img">
-                                            <img src="images/WhatsApp Image 2025-07-29 at 3.41.54 PM.jpeg" class="img-fluid rounded b-shadow-a" alt="">
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col-sm-6 col-md-7">
-                                    <div class="title-box-2">
-                                        <h6 class="title-left">
-                                            Contact me
-                                        </h6>
-                                    </div>
-                                    <div class="about-info">
-
-                                        <p><i class="fa-solid fa-envelope"></i><span class="title-s"> Email: </span>
-                                            <span>merna9540@gmail.com</span>
-                                        </p>
-                                        <p><i class="fa-solid fa-phone"></i><span class="title-s"> Phone: </span>
-                                            <span>+20 1141757459⁩</span>
-                                        </p>
-                                        <a href="https://www.linkedin.com/in/merna-ayman-0ba7a4261/">
-                                            <p><i class="fa-brands fa-linkedin"></i><span class="title-s"> Linked-in
-                                                </span></p>
-                                        </a>
-                                        <a href="https://www.facebook.com/merna.ayman.46629/?locale=ar_AR">
-                                            <p><i class="fa-brands fa-facebook"></i><span class="title-s"> Facebook
-                                                </span></p>
-                                        </a>
-
-
-
-
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col-md-8">
-                                <div class="about-me pt-4 pt-md-0">
-                                    <div class="title-box-2" id="about">
-                                        <h5 class="title-left">
-                                            About me
-                                        </h5>
-                                    </div>
-                                    <p class="lead">
-                                        I am a student at faculty of computer and artificial intelligence in my third
-                                        year till now my grade is very good i have worked on many projects i have a good
-                                        experience in front end and full stack and now learning meachine Learning.and i have many
-                                        skills and hopes
-                                    </p>
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <ul>
-                                                <li> <strong>Birthday:</strong> <span>7 septemper 2004</span></li>
-                                                <li> <strong>Age:</strong> <span>20</span></li>
-
-                                            </ul>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <ul>
-
-
-                                                <li><strong>City:</strong> <span>Cairo</span></li>
-                                                <li><strong>Address:</strong> <span>El Giza City</span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="about-me pt-4 pt-md-0">
-                                        <div class="title-box-2">
-                                            <h5 class="title-left">
-                                                Education
-                                            </h5>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-3">
-                                                <p>2022-2026</p>
-                                            </div>
-                                            <div class="col-lg-9">
-                                                <p>Computer and Artificial Intelligence
-                                                    Helwan University
-                                                </p>
-                                                <ul>
-                                                    <li><strong>grade:</strong> <span>Very Good</span></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="skill-mf">
-                                    <div class="title-box-2">
-                                        <h5 class="title-left">
-                                            Skills
-                                        </h5>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <span>HTML</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 100%;"
-                                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <span>CSS</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 100%;"
-                                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <span>JavaScript</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 70%;"
-                                                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <span>BootStrap</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 60%;"
-                                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <span>C</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 80%;"
-                                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <span>C++</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 80%;"
-                                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <span>Python</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 70%;"
-                                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <span>JAVAScript</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 60%;"
-                                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-
-
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <span>SQL</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 80%;"
-                                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <span> MYSQL</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 80%;"
-                                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <span>OOP</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 75%;"
-                                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <span>Database</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 80%;"
-                                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <span>Algorithms</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 75%;"
-                                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <span>Data Structures</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 75%;"
-                                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="about-me pt-4 pt-md-0">
-                                        <div class="title-box-2">
-                                            <h5 class="title-left">
-                                                Projects
-                                            </h5>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-3">
-                                                <p>2022</p>
-                                            </div>
-                                            <div class="col-lg-9">
-                                                <p>SHOPPING WEBSITE</p>
-                                                <ul>
-                                                    <li><a
-                                                            href="https://github.com/MernaMero/Shopping_Project">https://github.com/MernaMero/Shopping_Project</a>
-                                                    </li>
-                                                </ul>
-
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-3">
-                                                <p>2024</p>
-                                            </div>
-                                            <div class="col-lg-9">
-                                                <p>ATM SYSTEM</p>
-                                                <ul>
-                                                    <li><span>Parallel Computing App with Python & GUI | OOP Design</span></li>
-                                                </ul>
-
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-3">
-                                                <p>2024</p>
-                                            </div>
-                                            <div class="col-lg-9">
-                                                <p>MY Protoflio</p>
-                                                <ul>
-                                                    <li><a
-                                                            href="https://mernamero.github.io/My-Protofilo/">https://mernamero.github.io/My-Protofilo/</a>
-                                                    </li>
-                                                </ul>
-
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-3">
-                                                <p>2025</p>
-                                            </div>
-                                            <div class="col-lg-9">
-                                                <p>FusionML: Numerical & Image Processing</p>
-                                                <ul>
-                                                    <li><span>Predictive Modeling: KNN & Linear Regression</span></li>
-                                                    <li><span>Image Classification: Logistic Regression & KNN</span></li>
-                                                </ul>
-
-                                            </div>
-                                        </div>
-                                        
-
-                                    </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="about-me pt-4 pt-md-0">
-                                        <div class="title-box-2">
-                                            <h5 class="title-left">
-                                                Certificates
-                                            </h5>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-lg-4 ">
-                                                <a href="images/intro to Artifical intelligence.png"><img src="images/intro to Artifical intelligence.png" class="Certificates"></a>
-                                            </div>
-                                            <div class="col-lg-8">
-                                                <strong>Linked-in Learning</strong>
-                                                <p>
-                                                    intro to Artifical intelligence
-
-                                                </p>
-
-                                            </div>
-                                            <div class="col-lg-4 ">
-                                                <a href="images/Screenshot 2025-07-29 171947.png"><img src="images/Screenshot 2025-07-29 171947.png" class="Certificates"></a>
-                                            </div>
-                                            <div class="col-lg-8">
-                                                <strong>Udemy</strong>
-                                                <p>
-                                                    Mastering  C++ Fundmentals with  Generative AI: A Hands-On
-
-                                                </p>
-
-                                            </div>
-                                            <div class="col-lg-4 ">
-                                                <a href="images/Screenshot 2025-07-29 172025.png"><img src="images/Screenshot 2025-07-29 172025.png" class="Certificates"></a>
-                                            </div>
-                                            <div class="col-lg-8">
-                                                <strong>Mahara Tech </strong>
-                                                <p>
-                                                    Python Programming Basics
-
-                                                </p>
-
-                                            </div>
-                                            <div class="col-lg-4 ">
-                                                <a href="images/Screenshot 2025-07-29 172133.png"><img src="images/Screenshot 2025-07-29 172133.png" class="Certificates"></a>
-                                            </div>
-                                            <div class="col-lg-8">
-                                                <strong>Cisco</strong>
-                                                <p>
-                                                    intro to Data Science
-                                                </p>
-
-
-                                            </div>
-                                            <div class="col-lg-4 ">
-                                                <a href="images/Screenshot 2025-07-29 172208.png"><img src="images/Screenshot 2025-07-29 172208.png" class="Certificates"></a>
-                                            </div>
-                                            <div class="col-lg-8">
-                                                <strong>Datacamp</strong>
-                                                <p>
-                                                    introduction to Statistics in Python
-                                                </p>
-
-
-                                            </div>
-                                            <div class="col-lg-4 ">
-                                                <a href="images/Screenshot 2025-07-29 172253.png"><img src="images/Screenshot 2025-07-29 172253.png" class="Certificates"></a>
-                                            </div>
-                                            <div class="col-lg-8">
-                                                <strong>Kaggle</strong>
-                                                <p>
-                                                    Intro to Machine Learning
-                                                </p>
-
-
-                                            </div>
-                                            <div class="col-lg-4 ">
-                                                <a href="images//Screenshot 2025-07-29 172407.png"><img src="images//Screenshot 2025-07-29 172407.png" class="Certificates"></a>
-                                            </div>
-                                            <div class="col-lg-8">
-                                                <strong>Datacamp</strong>
-                                                <p>
-                                                    Understanding Aritifcial Intelligence
-                                                </p>
-
-
-                                            </div>
-                                            <div class="col-lg-4 ">
-                                                <a href="images/Screenshot 2025-07-29 172325.png"><img src="images/Screenshot 2025-07-29 172325.png" class="Certificates"></a>
-                                            </div>
-                                            <div class="col-lg-8">
-                                                <strong>Mahara Tech</strong>
-                                                <p>
-                                                    CyberScurity For All
-                                                </p>
-
-
-                                            </div>
-                                            <div class="col-lg-4 ">
-                                                <a href="images/Screenshot 2025-07-29 172432.png"><img src="images/Screenshot 2025-07-29 172432.png" class="Certificates"></a>
-                                            </div>
-                                            <div class="col-lg-8">
-                                                <strong>Datacamp</strong>
-                                                <p>
-                                                    Understanding Machine Learning
-                                                </p>
-
-
-                                            </div>
-                                            <div class="col-lg-4 ">
-                                                <a href="images/Screenshot 2025-07-29 172648.png"><img src="images/Screenshot 2025-07-29 172648.png" class="Certificates"></a>
-                                            </div>
-                                            <div class="col-lg-8">
-                                                <strong>Cisco</strong>
-                                                <p>
-                                                    intro to CyberSecurity
-                                                </p>
-
-
-                                            </div>
-                                            <div class="col-lg-4 ">
-                                                <a href="images/Screenshot 2025-07-29 172538.png"><img src="images/Screenshot 2025-07-29 172538.png" class="Certificates"></a>
-                                            </div>
-                                            <div class="col-lg-8">
-                                                <strong>Datacamp</strong>
-                                                <p>
-                                                    Cleaning Data in Python
-                                                </p>
-
-
-                                            </div>
-                                            
-                                        </div>
-
-                                    </div>
-                                </div>
-                                
-                                </div>
-                                <div class="col-md-8" id="edu">
-                                    <div class="about-me pt-4 pt-md-0">
-                                        <div class="title-box-2">
-                                            <h5 class="title-left">
-                                                Soft Skills
-                                            </h5>
-                                        </div>
-                                        <div class="row">
-
-                                            <div>
-
-                                                <ul>
-                                                    <li><span>Teamwork</span></li>
-                                                    <li><span>Leadership</span></li>
-                                                    <li><span>Self-learner</span></li>
-                                                    <li><span>Time Management</span></li>
-                                                    <li><span>Able to meet deadlines</span></li>
-                                                    <li><span>Work under stress</span></li>
-                                                    <li><span>Good Communication Skills</span></li>
-                                                    <li><span>Ability to learn new technologies</span></li>
-
-                                                </ul>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="about-me pt-4 pt-md-0">
-                                        <div class="title-box-2">
-                                            <h5 class="title-left">
-                                                Languages
-                                            </h5>
-                                        </div>
-                                        <div class="row">
-
-                                            <div>
-
-                                                <ul>
-                                                    <li><strong> Arabic:</strong> <span> Native</span></li>
-                                                    <li><strong>English:</strong> <span>Very Good</span></li>
-                                                    <li><strong>German:</strong> <span>Very Good</span></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">COMPUTER SCIENCE GRADUATE · 2026</p>
+          <h1>Merna <span>Ayman.</span></h1>
+          <p>Computer Science graduate from Helwan University, interested in software quality assurance, software development, and AI-powered applications. I enjoy solving problems, learning new technologies, and building reliable software.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">Explore projects <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="button outline" href="https://mernaayman-l.github.io/Portfolio-Website/" target="_blank" rel="noopener noreferrer">View portfolio <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+          <div class="socials">
+            <a href="mailto:merna9540@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://github.com/MernaAyman-l" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/merna-ayman-l/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
         </div>
-    </section><!-- End About Section -->
+        <div class="portrait-wrap">
+          <img src="images/WhatsApp%20Image%202025-07-29%20at%203.41.54%20PM.jpeg" alt="Portrait of Merna Ayman">
+          <div class="portrait-note"><i class="fa-solid fa-graduation-cap"></i> Helwan University · 2026</div>
+        </div>
+      </div>
+    </section>
 
+    <section class="section muted-section" id="about">
+      <div class="container">
+        <p class="eyebrow">01 / PROFILE</p>
+        <h2 class="section-title">Professional <span>summary.</span></h2>
+        <div class="card">
+          <p class="summary">Computer Science graduate with an academic background in programming, databases, software engineering, and machine learning. In my graduation project, I worked specifically on the Quality Assurance Agent within an AI-powered software engineering platform, contributing to automated testing, code quality evaluation, issue detection, and self-repair workflows. I am interested in junior opportunities where I can apply my technical foundation, grow through practical work, and contribute to a collaborative team.</p>
+          <div class="facts">
+            <div><strong>Very Good</strong><span>Overall grade</span></div>
+            <div><strong>Excellent</strong><span>Graduation project</span></div>
+            <div><strong>2026</strong><span>Graduation year</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container">
+        <p class="eyebrow">02 / EDUCATION</p>
+        <h2 class="section-title">Academic <span>background.</span></h2>
+        <div class="card">
+          <div class="entry">
+            <div class="entry-head"><h4>B.Sc. in Computer Science</h4><span class="date">2022 – 2026</span></div>
+            <p>Faculty of Computers and Artificial Intelligence, Helwan University</p>
+            <ul><li>Overall grade: Very Good</li><li>Graduation project grade: Excellent</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted-section" id="skills">
+      <div class="container">
+        <p class="eyebrow">03 / TECHNICAL TOOLKIT</p>
+        <h2 class="section-title">Skills & <span>technologies.</span></h2>
+        <p class="section-lead">Technologies practiced through university coursework, training, and hands-on projects.</p>
+        <div class="resume-grid">
+          <article class="card"><h3><i class="fa-solid fa-code"></i> Programming</h3><div class="skills"><span>Python</span><span>C++</span><span>C</span><span>Java</span><span>JavaScript</span></div></article>
+          <article class="card"><h3><i class="fa-solid fa-window-maximize"></i> Web Development</h3><div class="skills"><span>HTML</span><span>CSS</span><span>Bootstrap</span><span>React</span><span>FastAPI</span></div></article>
+          <article class="card"><h3><i class="fa-solid fa-vial-circle-check"></i> QA & Software Engineering</h3><div class="skills"><span>Software Testing</span><span>Test Design</span><span>Debugging</span><span>Git</span><span>GitHub</span></div></article>
+          <article class="card"><h3><i class="fa-solid fa-brain"></i> AI & Machine Learning</h3><div class="skills"><span>Scikit-learn</span><span>NumPy</span><span>Pandas</span><span>OpenCV</span><span>LangChain</span><span>RAG</span></div></article>
+          <article class="card"><h3><i class="fa-solid fa-database"></i> Databases</h3><div class="skills"><span>MySQL</span><span>SQLite</span><span>PostgreSQL</span><span>Supabase</span><span>SQL</span></div></article>
+          <article class="card"><h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Platforms</h3><div class="skills"><span>Docker</span><span>Linux</span><span>VS Code</span><span>Jupyter</span><span>Postman</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <p class="eyebrow">04 / EXPERIENCE & ACTIVITIES</p>
+        <h2 class="section-title">Training & <span>experience.</span></h2>
+        <div class="card">
+          <div class="entry">
+            <div class="entry-head"><h4>AI & Machine Learning Intern · Elevo</h4><span class="date">2024 · 1 month</span></div>
+            <p>Completed practical training in artificial intelligence and machine learning.</p>
+          </div>
+          <div class="entry">
+            <div class="entry-head"><h4>Generative AI Training · NVIDIA & ITI</h4><span class="date">2025 · 35 hours</span></div>
+            <p>Training covering Generative AI, prompt engineering, and Retrieval-Augmented Generation (RAG).</p>
+          </div>
+          <div class="entry">
+            <div class="entry-head"><h4>Organizer · Build X / GDGC Al-Azhar</h4><span class="date">Activities</span></div>
+            <p>Supported the Media Buying track as an organizer.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted-section" id="projects">
+      <div class="container">
+        <p class="eyebrow">05 / SELECTED WORK</p>
+        <h2 class="section-title">Projects & <span>contributions.</span></h2>
+        <div class="resume-grid">
+          <article class="card">
+            <div class="project"><h4>AI-Powered Software Engineering — QA Agent</h4><p>Graduation project contribution focused on the QA Agent: automated quality checks, test generation and execution, issue detection, code quality evaluation, and self-repair workflows.</p><a href="https://github.com/Mina-Emad-101/multi-agent-proj" target="_blank" rel="noopener noreferrer">View project repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+            <div class="project"><h4>ATM Simulator</h4><p>Python desktop application with a graphical interface, database integration, and transaction handling.</p><a href="https://github.com/MernaAyman-l/ATM-Simulator-Python-MySQL" target="_blank" rel="noopener noreferrer">View repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+            <div class="project"><h4>E-Commerce Web Application</h4><p>Full-stack shopping application covering product browsing, user accounts, cart management, and checkout.</p><a href="https://github.com/MernaAyman-l/E-Commerce-Web-Application" target="_blank" rel="noopener noreferrer">View repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+          </article>
+          <article class="card">
+            <div class="project"><h4>Movie Recommendation System</h4><p>Recommendation project applying collaborative filtering and similarity measures to movie data.</p><a href="https://github.com/MernaAyman-l/movie-recommendation-system" target="_blank" rel="noopener noreferrer">View repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+            <div class="project"><h4>Amazon Reviews Sentiment Analysis</h4><p>Natural language processing project exploring three-class review sentiment classification with an LSTM model.</p><a href="https://github.com/MernaAyman-l/lstm-reviews-sentiment-analysis" target="_blank" rel="noopener noreferrer">View repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="certifications">
+      <div class="container">
+        <p class="eyebrow">06 / CONTINUOUS LEARNING</p>
+        <h2 class="section-title">Courses & <span>certifications.</span></h2>
+        <div class="cert-list">
+          <div class="cert"><i class="fa-solid fa-shield-halved"></i><div><strong>Introduction to Cybersecurity</strong><small>Cisco Networking Academy</small></div></div>
+          <div class="cert"><i class="fa-solid fa-shield"></i><div><strong>Cybersecurity For All</strong><small>ITI Mahara-Tech</small></div></div>
+          <div class="cert"><i class="fa-solid fa-code"></i><div><strong>Python Programming Basics</strong><small>ITI Mahara-Tech</small></div></div>
+          <div class="cert"><i class="fa-solid fa-robot"></i><div><strong>Generative AI Summer Training</strong><small>NVIDIA Deep Learning Institute via ITI · 35 hours</small></div></div>
+          <div class="cert"><i class="fa-solid fa-brain"></i><div><strong>Understanding Artificial Intelligence</strong><small>DataCamp</small></div></div>
+          <div class="cert"><i class="fa-solid fa-laptop-code"></i><div><strong>Machine Learning & Front-End Training</strong><small>CodeAlpha · SEF Academy</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted-section" id="languages">
+      <div class="container">
+        <p class="eyebrow">07 / LANGUAGES</p>
+        <h2 class="section-title">Communication <span>languages.</span></h2>
+        <div class="skills"><span>Arabic — Native</span><span>English — Very Good</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-box">
+        <p class="eyebrow">08 / CONTACT</p>
+        <h2 class="section-title">Let's connect.</h2>
+        <p>Open to junior opportunities, internships, and collaborations in software engineering, QA, and related technology fields.</p>
+        <div class="contact-links"><a href="mailto:merna9540@gmail.com"><i class="fa-regular fa-envelope"></i> merna9540@gmail.com</a><a href="https://www.linkedin.com/in/merna-ayman-l/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/MernaAyman-l" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://mernaayman-l.github.io/Portfolio-Website/" target="_blank" rel="noopener noreferrer">Portfolio</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container footer-inner"><a class="brand" href="#top">MA<span>.</span></a><span>Merna Ayman · Resume · 2026</span><a href="#top">Back to top ↑</a></div></footer>
+  <script>
+    const menuButton=document.querySelector('.menu-toggle');
+    const navLinks=document.querySelector('.nav-links');
+    menuButton.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));menuButton.innerHTML=open?'<i class="fa-solid fa-xmark"></i>':'<i class="fa-solid fa-bars"></i>';});
+    navLinks.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{navLinks.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.innerHTML='<i class="fa-solid fa-bars"></i>'; }));
+  </script>
 </body>
-
-
-
 </html>
