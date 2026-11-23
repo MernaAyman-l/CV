@@ -53,14 +53,17 @@ No build tools or package installation are required.
 ```text
 CV/
 ├── index.html
-├── style.css
+├── css/
+│   ├── style.css
+│   └── vendor stylesheets
 ├── images/
+├── webfonts/
 └── README.md
 ```
 
-## CV PDF
+## PDF Export
 
-The website includes a **Download CV** button prepared to download `Merna_Ayman_Louis_CV.pdf` from the repository root. The PDF will be available through that button once the file is added to the repository.
+The page includes print styling. Use the browser's **Print → Save as PDF** option to export the CV; no separate PDF file is currently stored in this repository.
 
 ---
 
