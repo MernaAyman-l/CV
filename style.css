@@ -172,3 +172,11 @@ body{background:#fff;font-size:9pt;-webkit-print-color-adjust:exact;print-color-
 .page-footer{padding:8px 11mm;font-size:6pt}
 .page-footer a{font-size:6pt}
 }
+
+/* Final layout details */
+.cv-download{display:inline-flex;align-items:center;gap:7px;text-decoration:none}
+.hero-highlights{display:flex;flex-wrap:wrap;gap:25px;margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.17)}
+.hero-highlights span{display:flex;flex-direction:column;gap:1px;color:#a9bdc9;font-size:8px;letter-spacing:.2px}
+.hero-highlights b{color:#fff;font:700 12px Manrope}
+@media(max-width:680px){.hero-highlights{gap:18px}.hero-highlights span{font-size:7px}.hero-highlights b{font-size:10px}}
+@media print{.cv-download{display:none}.hero-highlights{margin-top:15px}}
